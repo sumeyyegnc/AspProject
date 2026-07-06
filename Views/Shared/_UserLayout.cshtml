@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Kullanıcı Paneli</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+
+<!-- USER NAVBAR -->
+<nav class="navbar navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+            Kullanıcı Paneli
+        </a>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    @RenderBody()
+</div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+﻿@model AspProject.Models.RaporViewModel
+
+@{
+    var type = ViewBag.Type as string;
+}
+
+<h2>Raporlama Paneli</h2>
+
+<div style="margin-bottom:15px;">
+    <a class="btn btn-primary" asp-action="Index" asp-route-type="kullanicilar">Kullanıcılar</a>
+    <a class="btn btn-success" asp-action="Index" asp-route-type="sehirler">Şehirler</a>
+    <a class="btn btn-warning" asp-action="Index" asp-route-type="urunler">Ürünler</a>
+</div>
+
+<hr />
+
+@if (type == "kullanicilar")
+{
+    <h3>Kullanıcı Listesi</h3>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>ID</th>
+            <th>Ad</th>
+            <th>Email</th>
+        </tr>
+
+        @foreach (var k in Model.Kullanicilar)
+        {
+            <tr>
+                <td>@k.KullaniciId</td>
+                <td>@k.KullaniciAdi</td>
+                <td>@k.Mail</td>
+            </tr>
+        }
+    </table>
+}
+else if (type == "sehirler")
+{
+    <h3>Şehir Listesi</h3>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>ID</th>
+            <th>Şehir Adı</th>
+        </tr>
+
+        @foreach (var s in Model.Sehirler)
+        {
+            <tr>
+                <td>@s.SehirNo</td>
+                <td>@s.SehirAdi</td>
+            </tr>
+        }
+    </table>
+}
+else if (type == "urunler")
+{
+    <h3>Ürün Listesi</h3>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>ID</th>
+            <th>Ürün Adı</th>
+            <th>Fiyat</th>
+        </tr>
+
+        @foreach (var u in Model.Urunler)
+        {
+            <tr>
+               
+                <td>@u.UrunAdi</td>
+                <td>@u.Fiyati</td>
+            </tr>
+        }
+    </table>
+}

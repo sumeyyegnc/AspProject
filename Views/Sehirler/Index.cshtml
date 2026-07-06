@@ -1,0 +1,40 @@
+﻿@model IEnumerable<AspProject.Models.Sehir>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+
+
+</p>
+<table class="table">
+
+    <form asp-action="Index" method="get">
+        <input type="text" name="searchString" class="form-control" placeholder="Şehir ara..." />
+
+        <button type="submit" class="btn btn-primary mt-2">
+            Ara
+        </button>
+    </form>
+
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.SehirAdi)</th>
+            <th>@Html.DisplayNameFor(model => model.Plaka)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.SehirAdi)</td>
+                <td>@Html.DisplayFor(modelItem => item.Plaka)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.SehirNo" class="btn btn-success">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@item.SehirNo" class="btn btn-danger">Delete</a>
+
+                </td>
+
+            </tr>
+
+        }
+    </tbody>
+</table>

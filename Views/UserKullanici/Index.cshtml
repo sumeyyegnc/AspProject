@@ -1,0 +1,39 @@
+﻿@model IEnumerable<AspProject.Models.Kullanici>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+
+
+</p>
+<table class="table">
+
+    <form asp-action="Index" method="get">
+        <input type="text" name="searchString" class="form-control" placeholder="Kullanici ara..." />
+
+        <button type="submit" class="btn btn-primary mt-2">
+            Ara
+        </button>
+    </form>
+
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.KullaniciAdi)</th>
+            <th>@Html.DisplayNameFor(model => model.Mail)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.KullaniciAdi)</td>
+                <td>@Html.DisplayFor(modelItem => item.Mail)</td>
+                <td>
+                    
+
+                </td>
+
+            </tr>
+
+        }
+    </tbody>
+</table>

@@ -1,0 +1,40 @@
+﻿@model IEnumerable<AspProject.Models.Urun>
+
+    <p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+
+
+    </p>
+<table class="table">
+
+    <form asp-action="Index" method="get">
+        <input type="text" name="searchString" class="form-control" placeholder="Ürün ara..." />
+
+        <button type="submit" class="btn btn-primary mt-2">
+            Ara
+        </button>
+    </form>
+
+    <thead>
+        <tr>
+           <th>@Html.DisplayNameFor(model=>model.UrunAdi)</th>
+           <th>@Html.DisplayNameFor(model => model.Stok)</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach(var item in Model)
+{
+    <tr>
+        <td>@Html.DisplayFor(modelItem => item.UrunAdi)</td>
+        <td>@Html.DisplayFor(modelItem => item.Stok)</td>
+        <td>
+            <a asp-action="Edit" asp-route-id="@item.UrunId" class="btn btn-success">Edit</a>
+            <a asp-action="Delete" asp-route-id="@item.UrunId" class="btn btn-danger">Delete</a>
+
+        </td>
+
+    </tr>
+
+}
+    </tbody>
+    </table>
