@@ -35,8 +35,8 @@ The project includes a public landing page and a separate admin dashboard. Users
 
 ### Dashboard
 
-![Dashboard](<img width="1920" height="902" alt="Ekran Görüntüsü (86)" src="https://github.com/user-attachments/assets/650f9331-be1d-4b40-8817-2e78ca6539c2" />
-)
+<img width="1920" height="902" alt="Ekran Görüntüsü (86)" src="https://github.com/user-attachments/assets/650f9331-be1d-4b40-8817-2e78ca6539c2" />
+
 
 ### Products
 
