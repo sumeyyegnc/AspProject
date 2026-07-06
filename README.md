@@ -49,4 +49,3 @@ The project includes a public landing page and a separate admin dashboard. Users
 
 <img width="1920" height="926" alt="Ekran Görüntüsü (89)" src="https://github.com/user-attachments/assets/28f732a4-e822-4af3-a6ad-804df90aafb3" />
 
-
