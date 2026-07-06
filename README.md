@@ -1,4 +1,4 @@
-# ☕ AspProject
+#  AspProject
 
 This project was developed as part of the SoftITo Backend Development program. It is a dynamic ASP.NET Core MVC web application featuring a modern admin dashboard for managing products, cities, users, and reports. The application provides a clean and user-friendly interface while offering secure authentication and authorization using ASP.NET Core Identity.
 
