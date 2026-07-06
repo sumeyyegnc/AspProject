@@ -40,16 +40,17 @@ The project includes a public landing page and a separate admin dashboard. Users
 
 ### Products
 
-![Products](
+<img width="1920" height="921" alt="Ekran Görüntüsü (87)" src="https://github.com/user-attachments/assets/7e7910e2-838b-4d5d-a39c-77dd08c969e2" />
+
 
 
 ### Cities
 
-![Cities](docs/images/cities.png)
+<img width="1920" height="923" alt="Ekran Görüntüsü (88)" src="https://github.com/user-attachments/assets/9590de20-77ea-49b1-906a-4740ce6b28b9" />
 
 ### Users
 
-![Users](docs/images/users.png)
+<img width="1920" height="926" alt="Ekran Görüntüsü (89)" src="https://github.com/user-attachments/assets/28f732a4-e822-4af3-a6ad-804df90aafb3" />
 
 ### Reports
 
